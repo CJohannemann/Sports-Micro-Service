@@ -36,7 +36,7 @@ public class PlayerServiceTest {
         var playerToSave = new Player().setFirstName("firstName").setLastName("lastName")
                 .setTeamPlayingFor("Random Team");
         var savedPlayer = playerToSave
-            .setId(1L);
+            .setId(1);
 
         when(playerRepository.save(playerToSave)).thenReturn(savedPlayer);
         playerService.savePlayer(playerToSave);
