@@ -19,7 +19,7 @@ import javax.persistence.Id;
 public class Player {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
     private String firstName;
     private String lastName;
     private String hometown;
