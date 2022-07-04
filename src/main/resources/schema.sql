@@ -1,42 +1,42 @@
 DROP TABLE if exists PLAYER;
 
 CREATE TABLE PLAYER (
-    id LONG AUTO_INCREMENT primary key ,
-    firstName varchar(50) NOT NULL,
-    lastName varchar(50) NOT NULL,
-    hometown varchar(75) NOT NULL,
-    dob varchar(10) NOT NULL,
+    id int AUTO_INCREMENT primary key ,
+    firstName varchar(25) NOT NULL,
+    lastName varchar(25) NOT NULL,
+    hometown varchar(50) NOT NULL,
+    dob date NOT NULL,
     teamPlayingFor varchar(50) not null,
-    sport varchar (50) not null
+    sport varchar (25) not null
 );
 
 DROP TABLE if exists MLB;
 
 CREATE TABLE MLB (
-    sport varchar(50) not null ,
-    team varchar(75) NOT NULL ,
+    sport varchar(15) not null ,
+    team varchar(50) NOT NULL ,
     wins varchar(3) NOT NULL,
     losses varchar(3) NOT NULL,
-    nextGame varchar(10) NOT NULL
+    nextGame date NOT NULL
 );
 
 DROP TABLE if exists NFL;
 
 CREATE TABLE NFL (
-                     sport varchar(50) not null ,
-                     team varchar(75) NOT NULL ,
-                     wins varchar(3) NOT NULL,
-                     losses varchar(3) NOT NULL,
-                     nextGame varchar(10) NOT NULL
+     sport varchar(15) not null ,
+     team varchar(50) NOT NULL ,
+     wins varchar(3) NOT NULL,
+     losses varchar(3) NOT NULL,
+     nextGame date NOT NULL
 );
 
 DROP TABLE if exists Soccer;
 
-CREATE TABLE Soccer (
-                     sport varchar(50) not null ,
-                     team varchar(75) NOT NULL ,
-                     wins varchar(3) NOT NULL,
-                     losses varchar(3) NOT NULL,
-                     nextGame varchar(10) NOT NULL
+CREATE TABLE MLS (
+     sport varchar(15) not null ,
+     team varchar(50) NOT NULL ,
+     wins varchar(3) NOT NULL,
+     losses varchar(3) NOT NULL,
+     nextGame date NOT NULL
 );
 

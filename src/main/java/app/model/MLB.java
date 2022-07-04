@@ -10,11 +10,9 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
 public class MLB {
-
     private String sport;
     private String team;
     private Integer wins;
     private Integer losses;
     private LocalDate nextGame;
-
 }

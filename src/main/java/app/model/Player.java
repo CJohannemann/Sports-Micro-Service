@@ -9,7 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
+import java.time.LocalDate;
 
 @Data
 @AllArgsConstructor
@@ -19,11 +19,11 @@ import javax.persistence.Id;
 public class Player {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
     private String firstName;
     private String lastName;
     private String hometown;
-    private String dob;
+    private LocalDate dob;
     private String teamPlayingFor;
     private String sport;
 
