@@ -6,7 +6,7 @@ import lombok.Data;
 public class NFL {
     private String sport;
     private String team;
-    private String wins;
-    private String losses;
+    private Integer wins;
+    private Integer losses;
     private String nextGame;
 }
