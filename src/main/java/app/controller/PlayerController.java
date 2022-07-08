@@ -21,15 +21,10 @@ public class PlayerController {
         return playerService.getAllPlayers();
     }
 
-    @PostMapping("/savePlayer")
+    @PostMapping(value = "/savePlayer", consumes = "application/json", produces = "application/json")
     public Player savePlayer(@RequestBody Player player) {
 
         return playerService.savePlayer(player);
     }
-//
-//    @GetMapping("/getPlayer/{playerLastName}")
-//    public List<Player> getPlayerByLastName(@PathVariable String inPlayerName){
-//        return repository.findPlayerByLastName(inPlayerName);
-//    }
 
 }

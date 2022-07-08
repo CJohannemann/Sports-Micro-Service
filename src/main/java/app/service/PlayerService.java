@@ -28,8 +28,4 @@ public class PlayerService {
         // Code here to transform savedPlayer to API version
         return savedPlayer;
     }
-
-  /**  BigDecimal calculateWinPercentage(Integer wins, Integer losses) {
-
-    }*/
 }
