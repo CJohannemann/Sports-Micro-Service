@@ -11,12 +11,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Accessors(chain = true)
 @Entity
-public class Player {
+public @Data class Player {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
